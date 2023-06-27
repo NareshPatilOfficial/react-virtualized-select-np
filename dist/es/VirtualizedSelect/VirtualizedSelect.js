@@ -53,7 +53,7 @@ var VirtualizedSelect = function (_Component) {
     key: 'render',
     value: function render() {
       var SelectComponent = this._getSelectComponent();
-
+      debugger;
       return React.createElement(SelectComponent, _extends({}, this.props, {
         ref: this._setSelectRef,
         menuRenderer: this._renderMenu,
@@ -87,6 +87,7 @@ var VirtualizedSelect = function (_Component) {
       var height = this._calculateListHeight({ options: options });
       var innerRowRenderer = optionRenderer || this._optionRenderer;
 
+      debugger;
       // react-select 1.0.0-rc3 passes duplicate `onSelect` and `selectValue` props to `menuRenderer`
       // The `Creatable` HOC only overrides `onSelect` which breaks an edge-case
       // In order to support creating items via clicking on the placeholder option,
